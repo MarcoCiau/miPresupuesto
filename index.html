@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Presupuesto</title>
+    <link rel="stylesheet" href="css/index.css">
+    <body>
+    <h1>Presupuesto de gastos mensuales</h1>
+
+    <div class="ingresos box">
+        <h2>Ingresos</h2>
+
+        <div class="item-text"><p>Fijos: </p></div>
+        <div class="item-value"><input type="text" id="ingreso_1" value=0.00></div>
+
+        <div class="item-text"><p>Variables: </p></div>
+        <div class="item-value"><input type="text" id="ingreso_2" value=0.00></div>
+
+        <div class="item-text"><p>Total: </p></div>
+        <div class="item-value"><input type="text" id="ingreso_total" ></div>
+    </div>
+
+    <div class="gastos-fijos box">
+        <h2>Gastos Fijos</h2>
+
+        <div class="item-text"><p>Renta/Hipoteca: </p></div>
+        <div class="item-value"><input type="text" id="gasto_fijo_1" value=0.00></div>
+
+        <div class="item-text"><p>Servicios: </p></div>
+        <div class="item-value"><input type="text" id="gasto_fijo_2" value=0.00></div>
+
+        <div class="item-text"><p>Comida: </p></div>
+        <div class="item-value"><input type="text" id="gasto_fijo_3" value=0.00></div>
+
+        <div class="item-text"><p>Transporte: </p></div>
+        <div class="item-value"><input type="text" id="gasto_fijo_4" value=0.00></div>
+
+        <div class="item-text"><p>Total: </p></div>
+        <div class="item-value"><input type="text" id="gasto_fijo_total" ></div>
+
+    </div>
+
+    <div class="gastos-variables box">
+        <h2>Gastos Variables</h2>
+
+        <div class="item-text"><p>Entretenimiento: </p></div>
+        <div class="item-value"><input type="text" id="gasto_variable_1" value=0.00></div>
+
+        <div class="item-text"><p>Salud-Medicinas: </p></div>
+        <div class="item-value"><input type="text" id="gasto_variable_2" value=0.00></div>
+
+        <div class="item-text"><p>Antojos: </p></div>
+        <div class="item-value"><input type="text" id="gasto_variable_2" value=0.00></div>
+
+        <div class="item-text"><p>Total: </p></div>
+        <div class="item-value"><input type="text" id="gasto_variable_total"></div>
+    </div>
+
+    <div class="ahorro box">
+        <h2>Ahorro</h2>
+
+        <div class="item-text"><p>Fondo de emergencias: </p></div>
+        <div class="item-value"><input type="number" id="ahorro_1" value=0.00></div>
+
+        <div class="item-text"><p>Fondo para el retiro: </p></div>
+        <div class="item-value"><input type="number" id="ahorro_2" value=0.00></div>
+
+        <div class="item-text"><p>Total: </p></div>
+        <div class="item-value"><input type="number" id="ahorro_total"></div>
+
+    </div>
+
+    <div class="balance box">
+        <p id="resultado">Tu banlance es de $0.00</p>
+    </div>
+
+</body>
+</html>
