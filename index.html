@@ -12,10 +12,10 @@
         <h2>Ingresos</h2>
 
         <div class="item-text"><p>Fijos: </p></div>
-        <div class="item-value"><input type="number" id="ingreso_1" value=0.00 name="ingresos" onblur="calcTotalIngresos()"></div>
+        <div class="item-value"><input type="number" id="ingreso_1" name="ingresos" onblur="calcTotalIngresos()"></div>
 
         <div class="item-text"><p>Variables: </p></div>
-        <div class="item-value"><input type="number" id="ingreso_2" value=0.00 name="ingresos" onblur="calcTotalIngresos()"></div>
+        <div class="item-value"><input type="number" id="ingreso_2"  name="ingresos" onblur="calcTotalIngresos()"></div>
 
         <div class="item-text"><p>Total: </p></div>
         <div class="item-value"><input type="number" id="ingreso_total" value=0.00 disabled="disabled" ></div>
@@ -25,16 +25,16 @@
         <h2>Gastos Fijos</h2>
 
         <div class="item-text"><p>Renta/Hipoteca: </p></div>
-        <div class="item-value"><input type="number" id="gasto_fijo_1" value=0.00></div>
+        <div class="item-value"><input type="number" id="gasto_fijo_1" name="gasto-fijo" onblur="calcTotalGastosFijos()"></div>
 
         <div class="item-text"><p>Servicios: </p></div>
-        <div class="item-value"><input type="number" id="gasto_fijo_2" value=0.00></div>
+        <div class="item-value"><input type="number" id="gasto_fijo_2" name="gasto-fijo" onblur="calcTotalGastosFijos()"></div>
 
         <div class="item-text"><p>Comida: </p></div>
-        <div class="item-value"><input type="number" id="gasto_fijo_3" value=0.00></div>
+        <div class="item-value"><input type="number" id="gasto_fijo_3" name="gasto-fijo" onblur="calcTotalGastosFijos()"></div>
 
         <div class="item-text"><p>Transporte: </p></div>
-        <div class="item-value"><input type="number" id="gasto_fijo_4" value=0.00></div>
+        <div class="item-value"><input type="number" id="gasto_fijo_4" name="gasto-fijo" onblur="calcTotalGastosFijos()"></div>
 
         <div class="item-text"><p>Total: </p></div>
         <div class="item-value"><input type="number" id="gasto_fijo_total" value=0.00 disabled="disabled"></div>
@@ -45,26 +45,26 @@
         <h2>Gastos Variables</h2>
 
         <div class="item-text"><p>Entretenimiento: </p></div>
-        <div class="item-value"><input type="number" id="gasto_variable_1" value=0.00></div>
+        <div class="item-value"><input type="number" id="gasto_variable_1" name="gasto-variable" onblur="calcTotalGastosVariables()"></div>
 
         <div class="item-text"><p>Salud-Medicinas: </p></div>
-        <div class="item-value"><input type="number" id="gasto_variable_2" value=0.00></div>
+        <div class="item-value"><input type="number" id="gasto_variable_2" name="gasto-variable" onblur="calcTotalGastosVariables()"></div>
 
         <div class="item-text"><p>Antojos: </p></div>
-        <div class="item-value"><input type="number" id="gasto_variable_3" value=0.00></div>
+        <div class="item-value"><input type="number" id="gasto_variable_3" name="gasto-variable" onblur="calcTotalGastosVariables()"></div>
 
         <div class="item-text"><p>Total: </p></div>
         <div class="item-value"><input type="number" id="gasto_variable_total" value=0.00 disabled="disabled"></div>
     </div>
 
-    <div class="ahorro box">
-        <h2>Ahorro</h2>
+    <div class="ahorros box">
+        <h2>Ahorros</h2>
 
         <div class="item-text"><p>Fondo de emergencias: </p></div>
-        <div class="item-value"><input type="number" id="ahorro_1" value=0.00></div>
+        <div class="item-value"><input type="number" id="ahorro_1" name="ahorro" onblur="calcTotalAhorro()"></div>
 
         <div class="item-text"><p>Fondo para el retiro: </p></div>
-        <div class="item-value"><input type="number" id="ahorro_2" value=0.00></div>
+        <div class="item-value"><input type="number" id="ahorro_2" name="ahorro" onblur="calcTotalAhorro()"></div>
 
         <div class="item-text"><p>Total: </p></div>
         <div class="item-value"><input type="number" id="ahorro_total"  value=0.00 disabled="disabled" ></div>
@@ -72,7 +72,8 @@
     </div>
 
     <div class="balance box">
-        <p id="resultado">Tu banlance es de $0.00</p>
+        
+        <p >Tu banlance es de <a href="#" id="resultado">$0.00</a></p>
     </div>
 
     <script  src="js/script.js"></script>
